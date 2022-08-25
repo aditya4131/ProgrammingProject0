@@ -12,10 +12,23 @@
  * </pre>
  */
 
-public class EratosthenesProfiler {
+import java.util.Scanner;
+public class EratosthenesProfiler extends EratosthenesUtil {
     public EratosthenesProfiler() {
     }
 
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter a number or enter 000 to quit: ");
+        int input = in.nextInt();
+
+
+        EratosthenesUtil a = new EratosthenesUtil();
+        long startTime = System.nanoTime();
+        a.toString(sieve(input));
+        long endTime = System.nanoTime();
+        long elapsedTime = endTime - startTime;
+        input = 0;
+        System.out.println("Time: " + elapsedTime / 1000000);
     }
 }
