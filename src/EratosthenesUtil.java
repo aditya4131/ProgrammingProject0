@@ -1,8 +1,8 @@
 /**
  * Provides an implementation for the Eratosthene's sieve generator
- * @author Duncan, YOUR NAME
+ * @author Aditya Srivastava
  * <pre>
- * Date: LAST-DATE-MODIFIED
+ * Date: 08/24/2022
  * Course: csc 3102
  * Project # 0
  * Instructor: Dr. Duncan
@@ -26,7 +26,7 @@ class EratosthenesUtil {
             isPrimeNumber[0] = false;
             isPrimeNumber[1] = false;
 
-            for(int i = 2; i<n/2; i++) {
+            for(int i = 2; i<Math.sqrt(n); i++) {
                 if (isPrimeNumber[i]) {
                     for(int j = 2; i*j< n; j++) {
                         isPrimeNumber[i*j] = false;
@@ -39,14 +39,6 @@ class EratosthenesUtil {
                     primeNumbers.add(i);
                 }
             }
-            System.out.print("{");
-            for(int k =  0; k<primeNumbers.size(); k++){
-
-                System.out.print( " , " + primeNumbers.get(k));
-            }
-
-            System.out.print("}");
-
             return primeNumbers;
         }
     }
@@ -54,14 +46,21 @@ class EratosthenesUtil {
     public static String toString(ArrayList<Integer> v) {
         String primes = "";
 
-        for(int i = 0; i < v.size(); i++) {
-            primes = primes + v.get(i);
+        System.out.print("{");
+        for(int i = 0; i<v.size(); i++){
+            if(i > 0 ){
+                System.out.print(",");
+            }
+            System.out.print(v.get(i));
         }
+        System.out.print("}");
+
+
 
         return "{" + primes + "}";
     }
 
     public static void main(String[] args) {
-         toString(sieve(0));
+         toString(sieve(100));
     }
 }

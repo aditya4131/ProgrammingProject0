@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2eb0eb86-6211-469d-87bc-4ee39a334e69" name="Changes" comment="udpated comments.">
+    <list default="true" id="2eb0eb86-6211-469d-87bc-4ee39a334e69" name="Changes" comment="Logic working correctly. Fix to string method.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EratosthenesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EratosthenesUtil.java" afterDir="false" />
     </list>
@@ -46,7 +46,12 @@
       <option name="presentableId" value="Default" />
       <updated>1661306174065</updated>
       <workItem from="1661306175244" duration="3765000" />
-      <workItem from="1661314238496" duration="1849000" />
+      <workItem from="1661314238496" duration="1980000" />
+      <workItem from="1661316435602" duration="49000" />
+      <workItem from="1661347735271" duration="517000" />
+      <workItem from="1661348278120" duration="395000" />
+      <workItem from="1661361830886" duration="209000" />
+      <workItem from="1661388155751" duration="929000" />
     </task>
     <task id="LOCAL-00001" summary="Programming Project 0. Code not returning proper values.">
       <created>1661306699020</created>
@@ -62,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661307311546</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Logic working correctly. Fix to string method.">
+      <created>1661316195731</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661316195731</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,6 +94,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Programming Project 0. Code not returning proper values." />
     <MESSAGE value="udpated comments." />
-    <option name="LAST_COMMIT_MESSAGE" value="udpated comments." />
+    <MESSAGE value="Logic working correctly. Fix to string method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Logic working correctly. Fix to string method." />
   </component>
 </project>
