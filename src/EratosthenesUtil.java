@@ -16,27 +16,27 @@ import java.util.Arrays;
 import java.lang.Math;
 
 class EratosthenesUtil {
-    public static ArrayList<Integer> sieve(long n) {
+    public static ArrayList<Long> sieve(long n) {
         if (n < 2) { // returns an empty arraylist if n is less than two
             return new ArrayList();
         } else {
-            ArrayList<Integer> primeNumbers = new ArrayList();
+            ArrayList<Long> primeNumbers = new ArrayList();
             boolean[] isPrimeNumber = new boolean[(int) n];
             Arrays.fill(isPrimeNumber, true);
 
             isPrimeNumber[0] = false;
             isPrimeNumber[1] = false;
 
-            for (int i = 2; i < Math.sqrt(n); i++) {
-                if (isPrimeNumber[i]) {
-                    for (int j = 2; i * j < n; j++) {
-                        isPrimeNumber[i * j] = false;
+            for (long i = 2; i < Math.sqrt(n); i++) {
+                if (isPrimeNumber[(int) i]) {
+                    for (long j = i*i;  j < n; j+=i) {
+                        isPrimeNumber[(int) j] = false;
                     }
                 }
             }
 
-            for (int i = 2; i < n; i++) {
-                if (isPrimeNumber[i]) {
+            for (long i = 2; i < n; i++) {
+                if (isPrimeNumber[(int) i]) {
                     primeNumbers.add(i);
                 }
             }
@@ -44,7 +44,7 @@ class EratosthenesUtil {
         }
     }
 
-    public static String toString(ArrayList<Integer> v) {
+    public static String toString(ArrayList<Long> v) {
         String primes = "";
 
         System.out.print("{");
@@ -56,6 +56,6 @@ class EratosthenesUtil {
         }
         System.out.print("}");
 
-        return "{" + primes + "}";
+        return primes;
     }
 }

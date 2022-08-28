@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2eb0eb86-6211-469d-87bc-4ee39a334e69" name="Changes" comment="Working correctly. Fix the toString implementation.">
+    <list default="true" id="2eb0eb86-6211-469d-87bc-4ee39a334e69" name="Changes" comment="Updated profiler to calculate time.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EratosthenesProfiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EratosthenesProfiler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EratosthenesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EratosthenesUtil.java" afterDir="false" />
@@ -30,15 +30,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,6 +54,12 @@
       <workItem from="1661348278120" duration="395000" />
       <workItem from="1661361830886" duration="209000" />
       <workItem from="1661388155751" duration="2662000" />
+      <workItem from="1661395222320" duration="1788000" />
+      <workItem from="1661441319332" duration="1280000" />
+      <workItem from="1661534676545" duration="164000" />
+      <workItem from="1661537455465" duration="579000" />
+      <workItem from="1661539592615" duration="677000" />
+      <workItem from="1661648064948" duration="4109000" />
     </task>
     <task id="LOCAL-00001" summary="Programming Project 0. Code not returning proper values.">
       <created>1661306699020</created>
@@ -83,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661389115602</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated profiler to calculate time.">
+      <created>1661395250312</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661395250312</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +118,7 @@
     <MESSAGE value="udpated comments." />
     <MESSAGE value="Logic working correctly. Fix to string method." />
     <MESSAGE value="Working correctly. Fix the toString implementation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Working correctly. Fix the toString implementation." />
+    <MESSAGE value="Updated profiler to calculate time." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated profiler to calculate time." />
   </component>
 </project>
