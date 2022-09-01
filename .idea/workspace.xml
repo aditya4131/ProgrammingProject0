@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2eb0eb86-6211-469d-87bc-4ee39a334e69" name="Changes" comment="Updated profiler to calculate time.">
+    <list default="true" id="2eb0eb86-6211-469d-87bc-4ee39a334e69" name="Changes" comment="Fixed the formatting issue and the changed the logic.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EratosthenesProfiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EratosthenesProfiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EratosthenesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EratosthenesUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +37,9 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
@@ -59,7 +63,10 @@
       <workItem from="1661534676545" duration="164000" />
       <workItem from="1661537455465" duration="579000" />
       <workItem from="1661539592615" duration="677000" />
-      <workItem from="1661648064948" duration="4109000" />
+      <workItem from="1661648064948" duration="7285000" />
+      <workItem from="1661789893381" duration="87000" />
+      <workItem from="1661911400363" duration="1169000" />
+      <workItem from="1661999827394" duration="1008000" />
     </task>
     <task id="LOCAL-00001" summary="Programming Project 0. Code not returning proper values.">
       <created>1661306699020</created>
@@ -96,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661395250312</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed the formatting issue and the changed the logic.">
+      <created>1661653258090</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661653258090</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +133,7 @@
     <MESSAGE value="Logic working correctly. Fix to string method." />
     <MESSAGE value="Working correctly. Fix the toString implementation." />
     <MESSAGE value="Updated profiler to calculate time." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated profiler to calculate time." />
+    <MESSAGE value="Fixed the formatting issue and the changed the logic." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the formatting issue and the changed the logic." />
   </component>
 </project>
