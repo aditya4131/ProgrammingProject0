@@ -4,9 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2eb0eb86-6211-469d-87bc-4ee39a334e69" name="Changes" comment="Fixed the formatting issue and the changed the logic.">
+    <list default="true" id="2eb0eb86-6211-469d-87bc-4ee39a334e69" name="Changes" comment="fixed all the logic and formatting issues.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EratosthenesProfiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EratosthenesProfiler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
       <workItem from="1661648064948" duration="7285000" />
       <workItem from="1661789893381" duration="87000" />
       <workItem from="1661911400363" duration="1169000" />
-      <workItem from="1661999827394" duration="1008000" />
+      <workItem from="1661999827394" duration="2358000" />
     </task>
     <task id="LOCAL-00001" summary="Programming Project 0. Code not returning proper values.">
       <created>1661306699020</created>
@@ -110,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661653258090</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed all the logic and formatting issues.">
+      <created>1662000952048</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1662000952048</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +140,7 @@
     <MESSAGE value="Working correctly. Fix the toString implementation." />
     <MESSAGE value="Updated profiler to calculate time." />
     <MESSAGE value="Fixed the formatting issue and the changed the logic." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the formatting issue and the changed the logic." />
+    <MESSAGE value="fixed all the logic and formatting issues." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed all the logic and formatting issues." />
   </component>
 </project>
