@@ -14,7 +14,6 @@
  */
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 import java.lang.Math;
 
@@ -35,7 +34,7 @@ public class EratosthenesProfiler {
 
         long finalTime = System.nanoTime();
         result = EratosthenesUtil.sieve(input);
-        finalTime = (System.nanoTime() - finalTime)/1000;
+        finalTime = (System.nanoTime() - finalTime) / 1000;
 
 
         System.out.print("P(" + input + ") = ");
@@ -53,11 +52,11 @@ public class EratosthenesProfiler {
         for (int i = 10000; i <= 150000; i += 10000) {
             finalTime = System.nanoTime();
             ArrayList<Long> finalPrimeResult = EratosthenesUtil.sieve(i);
-            finalTime = (System.nanoTime() - finalTime)/1000;
-             log = i / Math.log(i);
+            finalTime = (System.nanoTime() - finalTime) / 1000;
+            log = i / Math.log(i);
             //double pi = Math.PI * i;
-             size = finalPrimeResult.size();
-             error = ((log - size) / size) * 100;
+            size = finalPrimeResult.size();
+            error = ((log - size) / size) * 100;
 
             System.out.printf("%-12d %-12d %-12d %-12.1f %-12.1f", i, finalTime, size, log, error);
             System.out.println();

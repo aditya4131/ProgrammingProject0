@@ -28,34 +28,31 @@ class EratosthenesUtil {
         isPrimeNumber[0] = false;
         isPrimeNumber[1] = false;
 
-            for (long i = 2; i <= Math.sqrt(n); i++) {
-                if (isPrimeNumber[(int) i]) {
-                    for (long j = i*i;  j <= n; j+=i) {
-                        isPrimeNumber[(int) j] = false;
-                    }
+        for (long i = 2; i <= Math.sqrt(n); i++) {
+            if (isPrimeNumber[(int) i]) {
+                for (long j = i * i; j <= n; j += i) {
+                    isPrimeNumber[(int) j] = false;
                 }
             }
+        }
 
-            for (long i = 2; i <= n; i++) {
-                if (isPrimeNumber[(int) i]) {
-                    primeNumbers.add(i);
-                }
+        for (long i = 2; i <= n; i++) {
+            if (isPrimeNumber[(int) i]) {
+                primeNumbers.add(i);
             }
-            return primeNumbers;
+        }
+        return primeNumbers;
     }
-
     public static String toString(ArrayList<Long> v) {
         String primes = "";
-
-        primes+= "{";
+        primes += "{";
         for (int i = 0; i < v.size(); i++) {
             if (i > 0) {
                 primes += ",";
             }
             primes += v.get(i);
         }
-       primes += "}";
-
+        primes += "}";
         return primes;
     }
 }

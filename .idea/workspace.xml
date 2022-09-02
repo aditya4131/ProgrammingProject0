@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2eb0eb86-6211-469d-87bc-4ee39a334e69" name="Changes" comment="fixed all the logic and formatting issues.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2eb0eb86-6211-469d-87bc-4ee39a334e69" name="Changes" comment="final logic and formatting.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EratosthenesProfiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EratosthenesProfiler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EratosthenesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EratosthenesUtil.java" afterDir="false" />
@@ -67,7 +66,7 @@
       <workItem from="1661911400363" duration="1169000" />
       <workItem from="1661999827394" duration="2358000" />
       <workItem from="1662051057597" duration="1127000" />
-      <workItem from="1662127209563" duration="3828000" />
+      <workItem from="1662127209563" duration="5250000" />
     </task>
     <task id="LOCAL-00001" summary="Programming Project 0. Code not returning proper values.">
       <created>1661306699020</created>
@@ -118,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662000952048</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="final logic and formatting.">
+      <created>1662131826157</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662131826157</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +149,7 @@
     <MESSAGE value="Updated profiler to calculate time." />
     <MESSAGE value="Fixed the formatting issue and the changed the logic." />
     <MESSAGE value="fixed all the logic and formatting issues." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed all the logic and formatting issues." />
+    <MESSAGE value="final logic and formatting." />
+    <option name="LAST_COMMIT_MESSAGE" value="final logic and formatting." />
   </component>
 </project>
