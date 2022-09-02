@@ -24,18 +24,19 @@ public class EratosthenesProfiler {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        long input = in.nextLong();
 
-        System.out.println("Enter an integer n to generate primes in [2,n] -> " + input);
+
+        System.out.print("Enter an integer n to generate primes in [2,n] -> ");
+
+        long input = in.nextLong();
 
         ArrayList<Long> result = new ArrayList<>();
 
 
-        long startTime = System.nanoTime();
+        long finalTime = System.nanoTime();
         result = EratosthenesUtil.sieve(input);
-        long endTime = System.nanoTime();
-        long elapsedTime = endTime - startTime;
-        long finalTime = elapsedTime / 1000;
+        finalTime = (System.nanoTime() - finalTime)/1000;
+
 
         System.out.print("P(" + input + ") = ");
         System.out.print((EratosthenesUtil.toString(result)));
@@ -46,20 +47,19 @@ public class EratosthenesProfiler {
 
 
         System.out.printf("%-12s %-12s %-12s %-12s %-12s \n", "n", "Time(us)", "pi(n)", "n/ln(n)", "%Error in pi(n)");
+        double log, error;
+        long size;
 
         for (int i = 10000; i <= 150000; i += 10000) {
-            long startTime1 = System.nanoTime();
+            finalTime = System.nanoTime();
             ArrayList<Long> finalPrimeResult = EratosthenesUtil.sieve(i);
-            long endTime1 = System.nanoTime();
-            long elapsedTime1 = endTime1 - startTime1;
-            long finalTime1 = elapsedTime1 / 1000;
-
-            double log = i / Math.log(i);
+            finalTime = (System.nanoTime() - finalTime)/1000;
+             log = i / Math.log(i);
             //double pi = Math.PI * i;
-            long size = finalPrimeResult.size();
-            double error = ((log - size) / size) * 100;
+             size = finalPrimeResult.size();
+             error = ((log - size) / size) * 100;
 
-            System.out.printf("%-12d %-12d %-12d %-12.1f %-12.1f", i, finalTime1, size, log, error);
+            System.out.printf("%-12d %-12d %-12d %-12.1f %-12.1f", i, finalTime, size, log, error);
             System.out.println();
         }
 

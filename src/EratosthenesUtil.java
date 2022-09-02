@@ -17,44 +17,44 @@ import java.lang.Math;
 
 class EratosthenesUtil {
     public static ArrayList<Long> sieve(long n) {
-        if (n < 2) { // returns an empty arraylist if n is less than two
+        if (n < 2)
             return new ArrayList();
-        } else {
-            ArrayList<Long> primeNumbers = new ArrayList();
-            boolean[] isPrimeNumber = new boolean[(int) n];
-            Arrays.fill(isPrimeNumber, true);
 
-            isPrimeNumber[0] = false;
-            isPrimeNumber[1] = false;
 
-            for (long i = 2; i < Math.sqrt(n); i++) {
+        ArrayList<Long> primeNumbers = new ArrayList();
+        boolean[] isPrimeNumber = new boolean[(int) n + 1];
+        Arrays.fill(isPrimeNumber, true);
+
+        isPrimeNumber[0] = false;
+        isPrimeNumber[1] = false;
+
+            for (long i = 2; i <= Math.sqrt(n); i++) {
                 if (isPrimeNumber[(int) i]) {
-                    for (long j = i*i;  j < n; j+=i) {
+                    for (long j = i*i;  j <= n; j+=i) {
                         isPrimeNumber[(int) j] = false;
                     }
                 }
             }
 
-            for (long i = 2; i < n; i++) {
+            for (long i = 2; i <= n; i++) {
                 if (isPrimeNumber[(int) i]) {
                     primeNumbers.add(i);
                 }
             }
             return primeNumbers;
-        }
     }
 
     public static String toString(ArrayList<Long> v) {
         String primes = "";
 
-        System.out.print("{");
+        primes+= "{";
         for (int i = 0; i < v.size(); i++) {
             if (i > 0) {
-                System.out.print(",");
+                primes += ",";
             }
-            System.out.print(v.get(i));
+            primes += v.get(i);
         }
-        System.out.print("}");
+       primes += "}";
 
         return primes;
     }
